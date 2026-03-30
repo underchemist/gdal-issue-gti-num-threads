@@ -9,7 +9,7 @@ docker run \
     -v $(pwd)/main.py:/scripts/main.py \
     -v $(pwd):/scratch \
     --workdir /scratch \
-    --user 1000:1000 \
+    --user $UID:$GID \
     -e GDAL_NUM_THREADS=ALL_CPUS \
     -e GTI_NUM_THREADS=ALL_CPUS \
     --name gdal-issue-gti-num-threads \
