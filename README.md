@@ -1,6 +1,6 @@
 # gdal-issue-gti-num-threads
 
-This repository contains code to reproduce issues generating large GTIff image from a single GTI mosaic.
+This repository contains code to reproduce issues generating large GTIff image from a single GTI mosaic as described https://github.com/OSGeo/gdal/issues/14262.
 
 # main.py
 
