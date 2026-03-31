@@ -5,11 +5,10 @@ This repository contains code to reproduce issues generating large GTIff image f
 # main.py
 
 Contains code to 
-- generate 5000 2000x2000 uint8 GTiff images, in both EPSG:26910 and EPSG:26911 to be used as source files for GTI mosaic
+- generate 1000 2000x2000 uint8 GTiff images, in both EPSG:26910 and EPSG:26911 to be used as source files for GTI mosaic
 - generate mosaic GTI in EPSG:3857
 - generate GTiff from GTI with `SPARSE_OK=TRUE` and `BIGTIFF=YES`
 
-**note** this will generate ~20GiB of tiff files
 
 # run.sh
 
