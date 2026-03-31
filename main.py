@@ -78,7 +78,6 @@ def create_tiff(input_file: str, output_file: str) -> None:
             "TILED": "YES",
             "BLOCKXSIZE": 512,
             "BLOCKYSIZE": 512,
-            "NUM_THREADS": "ALL_CPUS",
         },
         overwrite=True,
     )
@@ -93,10 +92,10 @@ if __name__ == "__main__":
     }
     with gdal.config_options(config_options, thread_local=False):
         create_test_data(
-            490968, 5456767, CRSs[0], 2000, 2000, input_res, num_files=2500
+            490968, 5456767, CRSs[0], 2000, 2000, input_res, num_files=500
         )
         create_test_data(
-            705126, 5657838, CRSs[1], 2000, 2000, input_res, num_files=2500
+            705126, 5657838, CRSs[1], 2000, 2000, input_res, num_files=500
         )
         create_gti(DATA_DIR, "test.gti.gpkg", output_res)
         create_tiff("test.gti.gpkg", "test.tif")
